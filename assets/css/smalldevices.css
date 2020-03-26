@@ -1,0 +1,174 @@
+
+/* Small devices (phones, less than 768px)*/
+
+@media all and (max-width: 767.98px)
+{
+	body
+	{
+		max-width: auto;
+		font-size: 1em;
+		margin: 0;
+		padding: 0;
+	}
+
+	header
+	{
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+
+	.cadre_photo
+	{
+		width: auto;
+		min-width: auto;
+		padding-top: 20px;
+	}
+
+
+	.photo
+	{
+		max-width:100px;
+	}
+
+	.nom
+	{
+		padding:20px 0px 20px 0px;
+		width: auto;
+		min-width: auto;
+		background-color: #26A69A;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.prenom
+	{
+		color: white;
+	}
+
+	#souligne
+	{
+		border-bottom: 2px solid white;
+	}
+
+	h1
+	{
+		font-size: 1.8em;
+	}
+
+	h2
+	{
+		font-size: 1.2em;
+	}
+
+	.conteneur
+	{
+		width: auto;
+		flex-direction: column-reverse;
+		margin-top: 20px;
+	}
+
+	h3
+	{
+		font-size: 1.2em;
+	}
+
+	aside
+	{
+		width: auto;
+		min-width: auto;
+	}
+
+	address, .descriptif, .logos
+	{
+		margin: 20px 20px 20px 20px;
+	}
+
+	aside h3 
+	{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	main
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+		margin: 0;
+		width: auto;
+		min-width: auto;
+	}
+
+	main i
+	{
+		font-size: 1.5em;
+	}
+
+	.années
+	{
+		padding-left: 10px;
+	}
+
+
+	.formation, .experience, .recommandations
+	{
+		margin-bottom: 20px;
+	}
+
+	.ecole1, .ecole2
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.nom_ecole, .nom_experience
+	{
+		padding-left: 50px;
+		padding-bottom: 20px;
+	}
+
+	.job
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.p1
+	{
+		font-size: 1em;
+	}
+
+	li
+	{	
+		width: auto;
+		font-weight: bold;
+	}
+
+	ul
+	{
+		margin: 0;
+	}
+
+	li::before
+	{
+		padding-right: 10px;
+		padding-bottom: 10px;
+		float: inline-start;
+	}
+
+	ul.liste_description li
+	{
+		width: auto;
+		font-weight: normal;
+	}
+
+	.recommandations p
+	{
+		width: auto;
+		flex-grow: 1;
+		font-size: 1em;
+	}
+
+}
+
+
