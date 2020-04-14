@@ -1,22 +1,65 @@
 @charset "UTF-8";
 /* Stylesheet - Projet n°3 : Dynamisez une page web avec des animations css / Clémence Barnaud */
-body {
-  background-color: white;
-  max-width: 1500px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 0;
+@font-face {
+  src: url("assets/fonts/webFonts/ClarikaGrotesque-Medium/font.eot");
+  font-family: "ClarikaGrotesque-Medium";
+  src: url("assets/fonts/webFonts/ClarikaGrotesque-Medium/font.woff2") format("woff2"), url("assets/fonts/webFonts/ClarikaGrotesque-Medium/font.woff") format("woff"), url("assets/fonts/webFonts/ClarikaGrotesque-Medium/font.eot?#iefix") format("embedded-opentype"), url("assets/fonts/webFonts/ClarikaGrotesque-Medium/font.ttf") format("truetype");
+}
+@font-face {
+  font-family: "blackHand_TRIAL";
+  src: url("assets/fonts/black_hand/blackHand_TRIAL.otf");
+  src: url("assets/fonts/black_hand/blackHand_TRIAL.ttf") format("truetype");
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-header {
+body {
+  background-color: white;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  display: table;
+  position: relative;
+}
+
+header, footer, .btn {
   background-color: #579c87;
-  max-width: 1500px;
+  color: #fdcb46;
+  font-size: 2em;
+  font-family: "ClarikaGrotesque-Medium", "Avenir Next Medium";
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 243px;
+  height: 198px;
   margin: 0;
+}
+header a, footer a, .btn a {
+  width: 30%;
+}
+header a img, footer a img, .btn a img {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 112px;
+}
+main a {
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 2.7em;
+  align-self: center;
+  width: 528px;
+  height: 92px;
+  border-radius: 20px;
+  margin: 72px 72px;
 }
 
 .menu {
@@ -31,12 +74,14 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 538px;
-  height: 761px;
+  width: 430px;
+  height: 608px;
+  margin: 80px 80px 0 80px;
 }
 
 .bloc1 {
   background-color: #fcdfdb;
+  font-family: "blackHand_TRIAL";
 }
 
 .bloc2 {
@@ -49,6 +94,32 @@ header {
 
 .bloc4 {
   background-color: #fdfffd;
+}
+
+footer {
+  height: 112px;
+  width: 1200px;
+  justify-content: space-between;
+  align-content: stretch;
+  position: fixed;
+  bottom: 0;
+  left: auto;
+  right: auto;
+}
+footer a {
+  color: #fdcb46;
+  text-decoration: none;
+  padding: 30px;
+}
+
+#contact {
+  text-align: right;
+}
+
+/*Stylesheet - Page1.html - La note enchantée */
+.page1, .page1 .name {
+  background-color: #fcdfdb;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

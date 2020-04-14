@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3889005, 2020-04-09T07:34:21-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ClarikaGrotesque-Medium by The Refinery
+ * URL: https://www.myfonts.com/fonts/the-refinery/clarika/grotesque-medium/
+ * Copyright: Copyright &amp;#x00A9; 2017 by The Refinery LLC. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+
+  
+@font-face {
+  src: url('webFonts/ClarikaGrotesque-Medium/font.eot');
+  font-family: 'ClarikaGrotesque-Medium';
+  src: url('webFonts/ClarikaGrotesque-Medium/font.woff2') format('woff2'), url('webFonts/ClarikaGrotesque-Medium/font.woff') format('woff'), url('webFonts/ClarikaGrotesque-Medium/font.eot?#iefix') format('embedded-opentype'), url('webFonts/ClarikaGrotesque-Medium/font.ttf') format('truetype');
+}
+
