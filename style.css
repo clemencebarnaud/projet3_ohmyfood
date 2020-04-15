@@ -1,15 +1,68 @@
 @charset "UTF-8";
 /* Stylesheet - Projet n°3 : Dynamisez une page web avec des animations css / Clémence Barnaud */
 @font-face {
-  src: url("assets/fonts/webFonts/ClarikaGrotesque-Medium/font.eot");
   font-family: "ClarikaGrotesque-Medium";
-  src: url("assets/fonts/webFonts/ClarikaGrotesque-Medium/font.woff2") format("woff2"), url("assets/fonts/webFonts/ClarikaGrotesque-Medium/font.woff") format("woff"), url("assets/fonts/webFonts/ClarikaGrotesque-Medium/font.eot?#iefix") format("embedded-opentype"), url("assets/fonts/webFonts/ClarikaGrotesque-Medium/font.ttf") format("truetype");
+  src: url("assets/fonts/ClarikaGrotesque-Medium/font.eot");
+  src: url("assets/fonts/ClarikaGrotesque-Medium/font.woff2") format("woff2"), url("assets/fonts/ClarikaGrotesque-Medium/font.woff") format("woff"), url("assets/fonts/ClarikaGrotesque-Medium/font.eot?#iefix") format("embedded-opentype"), url("assets/fonts/ClarikaGrotesque-Medium/font.ttf") format("truetype");
 }
 @font-face {
-  font-family: "blackHand_TRIAL";
-  src: url("assets/fonts/black_hand/blackHand_TRIAL.otf");
-  src: url("assets/fonts/black_hand/blackHand_TRIAL.ttf") format("truetype");
+  font-family: "blackhand_trialregular";
+  src: url("assets/fonts/BlackHand/blackhand_trial-webfont.eot");
+  src: url("assets/fonts/BlackHand/blackhand_trial-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/BlackHand/blackhand_trial-webfont.woff2") format("woff2"), url("assets/fonts/BlackHand/blackhand_trial-webfont.woff") format("woff"), url("assets/fonts/BlackHand/blackhand_trial-webfont.ttf") format("truetype"), url("assets/fonts/BlackHand/blackhand_trial-webfont.svg#blackhand_trialregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
+.page1, .bloc1 h2 {
+  font-family: "blackhand_trialregular";
+}
+
+@font-face {
+  font-family: "kalamregular";
+  src: url("assets/fonts/Kalam/kalam-regular-webfont.eot");
+  src: url("assets/fonts/Kalam/kalam-regular-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Kalam/kalam-regular-webfont.woff2") format("woff2"), url("assets/fonts/Kalam/kalam-regular-webfont.woff") format("woff"), url("assets/fonts/Kalam/kalam-regular-webfont.ttf") format("truetype"), url("assets/fonts/Kalam/kalam-regular-webfont.svg#kalamregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "qillaitalic";
+  src: url("assets/fonts/Qilla/qilla_slant-webfont.eot");
+  src: url("assets/fonts/Qilla/qilla_slant-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Qilla/qilla_slant-webfont.woff2") format("woff2"), url("assets/fonts/Qilla/qilla_slant-webfont.woff") format("woff"), url("assets/fonts/Qilla/qilla_slant-webfont.ttf") format("truetype"), url("assets/fonts/Qilla/qilla_slant-webfont.svg#qillaitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.page2, .bloc2 h2 {
+  font-family: "qillaitalic";
+}
+
+@font-face {
+  font-family: "latin_modern_roman_demi10Rg";
+  src: url("assets/fonts/LatinModernRoman/lmromandemi10-regular-webfont.eot");
+  src: url("assets/fonts/LatinModernRoman/lmromandemi10-regular-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/LatinModernRoman/lmromandemi10-regular-webfont.woff2") format("woff2"), url("assets/fonts/LatinModernRoman/lmromandemi10-regular-webfont.woff") format("woff"), url("assets/fonts/LatinModernRoman/lmromandemi10-regular-webfont.ttf") format("truetype"), url("assets/fonts/LatinModernRoman/lmromandemi10-regular-webfont.svg#latin_modern_roman_demi10Rg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "dancing_script_otregular";
+  src: url("assets/fonts/DancingScript/dancingscript-regular-webfont.eot");
+  src: url("assets/fonts/DancingScript/dancingscript-regular-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/DancingScript/dancingscript-regular-webfont.woff2") format("woff2"), url("assets/fonts/DancingScript/dancingscript-regular-webfont.woff") format("woff"), url("assets/fonts/DancingScript/dancingscript-regular-webfont.ttf") format("truetype"), url("assets/fonts/DancingScript/dancingscript-regular-webfont.svg#dancing_script_otregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.page3, .bloc3 h2 {
+  font-family: "dancing_script_otregular";
+}
+
+@font-face {
+  font-family: "kaushan_scriptregular";
+  src: url("assets/fonts/KaushanScript/kaushanscript-regular-webfont.eot");
+  src: url("assets/fonts/KaushanScript/kaushanscript-regular-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/KaushanScript/kaushanscript-regular-webfont.woff2") format("woff2"), url("assets/fonts/KaushanScript/kaushanscript-regular-webfont.woff") format("woff"), url("assets/fonts/KaushanScript/kaushanscript-regular-webfont.ttf") format("truetype"), url("assets/fonts/KaushanScript/kaushanscript-regular-webfont.svg#kaushan_scriptregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.page4, .bloc4 h2 {
+  font-family: "kaushan_scriptregular";
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -18,7 +71,7 @@ html, body {
 
 body {
   background-color: white;
-  max-width: 1200px;
+  max-width: 1970px;
   width: 100%;
   margin: 0 auto 0 auto;
   display: table;
@@ -33,11 +86,11 @@ header, footer, .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 198px;
+  height: 150px;
   margin: 0;
 }
 header a, footer a, .btn a {
-  width: 30%;
+  width: 275px;
 }
 header a img, footer a img, .btn a img {
   width: 100%;
@@ -47,19 +100,14 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 112px;
+  padding-bottom: 85px;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 85px;
 }
 main a {
   text-decoration: none;
-}
-
-.btn {
-  font-size: 2.7em;
-  align-self: center;
-  width: 528px;
-  height: 92px;
-  border-radius: 20px;
-  margin: 72px 72px;
+  color: unset;
 }
 
 .menu {
@@ -74,31 +122,76 @@ main a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 430px;
-  height: 608px;
-  margin: 80px 80px 0 80px;
+  width: 325px;
+  height: 460px;
+  margin: 60px 30px 0 30px;
+}
+
+h2, h3 {
+  margin: 0;
+  line-height: 2.5em;
 }
 
 .bloc1 {
   background-color: #fcdfdb;
-  font-family: "blackHand_TRIAL";
+}
+.bloc1 i {
+  font-size: 2em;
+}
+.bloc1 h2 {
+  font-size: 1.4em;
+}
+.bloc1 h3 {
+  font-family: "kalamregular";
+  font-size: 2em;
 }
 
 .bloc2 {
   background-color: #fff5fe;
 }
+.bloc2 h2 {
+  font-size: 1.2em;
+}
+.bloc2 h3 {
+  font-family: "latin_modern_roman_demi10Rg";
+  font-size: 2em;
+}
 
 .bloc3 {
-  background-color: #f9f9f9;
+  background-color: #edefef;
+}
+.bloc3 h2 {
+  font-size: 1.7em;
+}
+.bloc3 h3 {
+  font-family: "kalamregular";
+  font-size: 2em;
 }
 
 .bloc4 {
   background-color: #fdfffd;
 }
+.bloc4 h2 {
+  font-size: 1.5em;
+}
+.bloc4 h3 {
+  font-family: "kalamregular";
+  font-size: 2em;
+}
+
+.btn {
+  font-size: 2.3em;
+  align-self: center;
+  width: 400px;
+  height: 70px;
+  border-radius: 20px;
+  margin: 55px 55px;
+}
 
 footer {
-  height: 112px;
-  width: 1200px;
+  height: 85px;
+  max-width: 1970px;
+  width: 100%;
   justify-content: space-between;
   align-content: stretch;
   position: fixed;
@@ -117,8 +210,66 @@ footer a {
 }
 
 /*Stylesheet - Page1.html - La note enchantée */
-.page1, .page1 .name {
+h1 {
+  align-self: center;
+}
+
+.page4, .page3, .page2, .page1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 725px;
+  height: 1000px;
+  margin: auto;
+}
+
+.page1 {
   background-color: #fcdfdb;
+  color: black;
+}
+
+.menu1 p, .menu2 p, .menu3 p, .menu4 p {
+  display: inline-block;
+}
+
+.starters, .mains, .desserts {
+  display: flex;
+  flex-direction: column;
+}
+.starters h3, .mains h3, .desserts h3 {
+  align-self: center;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header h2, .btn h2, footer h2 {
+  font-family: "blackhand_trialregular";
+}
+
+/*Stylesheet - Page2.html - Le chic à la française */
+.page2 {
+  background-color: #fff5fe;
+  color: black;
+}
+
+/*Stylesheet - Page3.html - Le délice des papilles */
+.page3 {
+  background-color: #edefef;
+  color: black;
+}
+
+/*Stylesheet - Page4.html - La palette du goût */
+.page4 {
+  background-color: #fdfffd;
   color: black;
 }
 
