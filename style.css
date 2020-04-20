@@ -100,7 +100,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 85px;
   max-width: 1000px;
   margin: auto;
   margin-bottom: 85px;
@@ -179,6 +178,18 @@ h2, h3 {
   font-size: 2em;
 }
 
+.bloc_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.bloc_text:hover {
+  transform: scale(1.15);
+  opacity: 50%;
+}
+
 .btn {
   font-size: 2.3em;
   align-self: center;
@@ -220,13 +231,21 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 725px;
-  height: 1000px;
+  height: 100%;
   margin: auto;
+  margin-bottom: 85px;
+  padding: 60px 0 60px 0;
 }
 
 .page1 {
   background-color: #fcdfdb;
   color: black;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu1 p, .menu2 p, .menu3 p, .menu4 p {
@@ -238,11 +257,21 @@ h1 {
   flex-direction: column;
 }
 .starters h3, .mains h3, .desserts h3 {
-  align-self: center;
+  display: flex;
+  align-items: center;
+  margin: 1em -1em;
+}
+.starters h3:before, .starters h3:after, .mains h3:before, .mains h3:after, .desserts h3:before, .desserts h3:after {
+  content: "";
+  flex: 1;
+  height: 5px;
+  margin: 0 1em;
+  background: black;
 }
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 li {
@@ -253,6 +282,14 @@ li {
 
 header h2, .btn h2, footer h2 {
   font-family: "blackhand_trialregular";
+}
+
+.bottom {
+  display: flex;
+}
+.bottom i {
+  line-height: 60px;
+  margin-right: 10px;
 }
 
 /*Stylesheet - Page2.html - Le chic à la française */

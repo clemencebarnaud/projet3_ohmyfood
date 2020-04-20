@@ -98,6 +98,13 @@
 	font-family: 'kaushan_scriptregular';
 }
 
+$color-bloc1: #fcdfdb;
+$color-bloc2: #fff5fe;
+$color-bloc3: #edefef;
+$color-bloc4: #fdfffd;
+$color-header: #579c87;
+$color-text-header: #fdcb46;
+
 html {
 	height: 100%;
 	margin: 0;
@@ -115,8 +122,8 @@ body {
 }
 
 header {
-	background-color: #579c87;
-	color: #fdcb46;
+	background-color: $color-header;
+	color: $color-text-header;
 	font-size: 2em;
 	font-family: 'ClarikaGrotesque-Medium', "Avenir Next Medium";
 	display: flex;
@@ -136,7 +143,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-bottom: 85px;
 	max-width: 1000px;
 	margin: auto;
 	margin-bottom: 85px;
@@ -170,7 +176,7 @@ h2, h3 {
 
 .bloc1 {
 	@extend %blocs;
-	background-color: #fcdfdb;
+	background-color: $color-bloc1;
 	i {
 		font-size: 2em;
 	}
@@ -187,7 +193,7 @@ h2, h3 {
 
 .bloc2 {
 	@extend %blocs;
-	background-color: #fff5fe;
+	background-color: $color-bloc2;
 	h2 {
 		@extend %font_chic_francaise;
 		font-size: 1.2em;
@@ -200,7 +206,7 @@ h2, h3 {
 
 .bloc3 {
 	@extend %blocs;
-	background-color: #edefef;
+	background-color: $color-bloc3;
 	h2 {
 		@extend %font_delice_papilles;
 		font-size: 1.7em;
@@ -213,7 +219,7 @@ h2, h3 {
 	
 .bloc4 {
 	@extend %blocs;
-	background-color: #fdfffd;
+	background-color: $color-bloc4;
 	h2 {
 		@extend %font_palette_gout;
 		font-size: 1.5em;
@@ -221,6 +227,18 @@ h2, h3 {
 	h3 {
 		font-family: 'kalamregular';
 		font-size: 2em;
+	}
+}
+
+.bloc_text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transform: scale(1);
+	transition: transform 400ms;
+	&:hover {
+		transform: scale(1.15);
+		opacity: 50%;
 	}
 }
 
@@ -246,7 +264,7 @@ footer {
 	left: auto;
 	right: auto;
 	a {
-		color: #fdcb46;
+		color: $color-text-header;
 		text-decoration: none;
 		padding:30px;
 	}
@@ -268,15 +286,23 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	width: 725px;
-	height: 1000px;
+	height: 100%;
 	margin: auto;
+	margin-bottom: 85px;
+	padding: 60px 0 60px 0;
 }
 
 .page1 {
 	@extend %pages;
-	background-color: #fcdfdb;
+	background-color: $color-bloc1;
 	color: black;
 	@extend %font_note_enchantee;
+}
+
+.name {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .menu1, .menu2, .menu3, .menu4 {
@@ -289,12 +315,22 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	h3 {
-		align-self: center;
+		display: flex;
+		align-items: center;
+		margin: 1em -1em;
+		&:before, &:after {
+			content: ""; 
+			flex:1;
+			height: 5px;
+			margin: 0 1em;
+			background: black;
+		}
 	}
 }
 
 ul {
 	list-style: none;
+	padding: 0;
 }
 
 li {
@@ -309,11 +345,20 @@ header {
 	}
 }
 
+.bottom {
+	display: flex;
+	i {
+		line-height: 60px;
+		margin-right: 10px;
+	}	
+}
+
+
 /*Stylesheet - Page2.html - Le chic à la française */
 
 .page2 {
 	@extend %pages;
-	background-color: #fff5fe;
+	background-color: $color-bloc2;
 	color: black;
 	@extend %font_chic_francaise;
 }
@@ -322,7 +367,7 @@ header {
 
 .page3 {
 	@extend %pages;
-	background-color: #edefef;
+	background-color: $color-bloc3;
 	color: black;
 	@extend %font_delice_papilles;
 }
@@ -331,7 +376,7 @@ header {
 
 .page4 {
 	@extend %pages;
-	background-color: #fdfffd;
+	background-color: $color-bloc4;
 	color: black;
 	@extend %font_palette_gout;
 }
