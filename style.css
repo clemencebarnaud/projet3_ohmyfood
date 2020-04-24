@@ -9,8 +9,6 @@
   font-family: "blackhand_trialregular";
   src: url("assets/fonts/BlackHand/blackhand_trial-webfont.eot");
   src: url("assets/fonts/BlackHand/blackhand_trial-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/BlackHand/blackhand_trial-webfont.woff2") format("woff2"), url("assets/fonts/BlackHand/blackhand_trial-webfont.woff") format("woff"), url("assets/fonts/BlackHand/blackhand_trial-webfont.ttf") format("truetype"), url("assets/fonts/BlackHand/blackhand_trial-webfont.svg#blackhand_trialregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 .page1, .bloc1 h2 {
   font-family: "blackhand_trialregular";
@@ -20,15 +18,11 @@
   font-family: "kalamregular";
   src: url("assets/fonts/Kalam/kalam-regular-webfont.eot");
   src: url("assets/fonts/Kalam/kalam-regular-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Kalam/kalam-regular-webfont.woff2") format("woff2"), url("assets/fonts/Kalam/kalam-regular-webfont.woff") format("woff"), url("assets/fonts/Kalam/kalam-regular-webfont.ttf") format("truetype"), url("assets/fonts/Kalam/kalam-regular-webfont.svg#kalamregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 @font-face {
   font-family: "qillaitalic";
   src: url("assets/fonts/Qilla/qilla_slant-webfont.eot");
   src: url("assets/fonts/Qilla/qilla_slant-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Qilla/qilla_slant-webfont.woff2") format("woff2"), url("assets/fonts/Qilla/qilla_slant-webfont.woff") format("woff"), url("assets/fonts/Qilla/qilla_slant-webfont.ttf") format("truetype"), url("assets/fonts/Qilla/qilla_slant-webfont.svg#qillaitalic") format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 .page2, .bloc2 h2 {
   font-family: "qillaitalic";
@@ -38,15 +32,11 @@
   font-family: "latin_modern_roman_demi10Rg";
   src: url("assets/fonts/LatinModernRoman/lmromandemi10-regular-webfont.eot");
   src: url("assets/fonts/LatinModernRoman/lmromandemi10-regular-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/LatinModernRoman/lmromandemi10-regular-webfont.woff2") format("woff2"), url("assets/fonts/LatinModernRoman/lmromandemi10-regular-webfont.woff") format("woff"), url("assets/fonts/LatinModernRoman/lmromandemi10-regular-webfont.ttf") format("truetype"), url("assets/fonts/LatinModernRoman/lmromandemi10-regular-webfont.svg#latin_modern_roman_demi10Rg") format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 @font-face {
   font-family: "dancing_script_otregular";
   src: url("assets/fonts/DancingScript/dancingscript-regular-webfont.eot");
   src: url("assets/fonts/DancingScript/dancingscript-regular-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/DancingScript/dancingscript-regular-webfont.woff2") format("woff2"), url("assets/fonts/DancingScript/dancingscript-regular-webfont.woff") format("woff"), url("assets/fonts/DancingScript/dancingscript-regular-webfont.ttf") format("truetype"), url("assets/fonts/DancingScript/dancingscript-regular-webfont.svg#dancing_script_otregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 .page3, .bloc3 h2 {
   font-family: "dancing_script_otregular";
@@ -56,8 +46,6 @@
   font-family: "kaushan_scriptregular";
   src: url("assets/fonts/KaushanScript/kaushanscript-regular-webfont.eot");
   src: url("assets/fonts/KaushanScript/kaushanscript-regular-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/KaushanScript/kaushanscript-regular-webfont.woff2") format("woff2"), url("assets/fonts/KaushanScript/kaushanscript-regular-webfont.woff") format("woff"), url("assets/fonts/KaushanScript/kaushanscript-regular-webfont.ttf") format("truetype"), url("assets/fonts/KaushanScript/kaushanscript-regular-webfont.svg#kaushan_scriptregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 .page4, .bloc4 h2 {
   font-family: "kaushan_scriptregular";
@@ -124,6 +112,7 @@ main a {
   width: 325px;
   height: 460px;
   margin: 60px 30px 0 30px;
+  box-shadow: 0 0 10px #ededed;
 }
 
 h2, h3 {
@@ -136,6 +125,9 @@ h2, h3 {
 }
 .bloc1 i {
   font-size: 2em;
+  background: linear-gradient(to right, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .bloc1 h2 {
   font-size: 1.4em;
@@ -150,10 +142,14 @@ h2, h3 {
 }
 .bloc2 h2 {
   font-size: 1.2em;
+  background: linear-gradient(to right, #c77412, #a56799, #6e4ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .bloc2 h3 {
   font-family: "latin_modern_roman_demi10Rg";
   font-size: 2em;
+  color: #c77412;
 }
 
 .bloc3 {
@@ -161,10 +157,14 @@ h2, h3 {
 }
 .bloc3 h2 {
   font-size: 1.7em;
+  background: linear-gradient(to right, #0432df, #0670f3, #229df9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .bloc3 h3 {
   font-family: "kalamregular";
   font-size: 2em;
+  color: #229df9;
 }
 
 .bloc4 {
@@ -172,10 +172,14 @@ h2, h3 {
 }
 .bloc4 h2 {
   font-size: 1.5em;
+  background: linear-gradient(to right, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .bloc4 h3 {
   font-family: "kalamregular";
   font-size: 2em;
+  color: #3d9339;
 }
 
 .bloc_text {
@@ -223,6 +227,9 @@ footer a {
 /*Stylesheet - Page1.html - La note enchantée */
 h1 {
   align-self: center;
+  font-size: 2.3em;
+  font-family: "ClarikaGrotesque-Medium";
+  padding-top: 20px;
 }
 
 .page4, .page3, .page2, .page1 {
@@ -235,11 +242,13 @@ h1 {
   margin: auto;
   margin-bottom: 85px;
   padding: 60px 0 60px 0;
+  box-shadow: 0 0 10px #ededed;
 }
 
 .page1 {
   background-color: #fcdfdb;
   color: black;
+  font-stretch: ultra-expanded;
 }
 
 .name {
@@ -247,26 +256,42 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
+.name i {
+  font-size: 3em;
+  background: linear-gradient(to right, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.name h2 {
+  font-size: 2em;
+}
 
 .menu1 p, .menu2 p, .menu3 p, .menu4 p {
   display: inline-block;
 }
 
-.starters, .mains, .desserts {
-  display: flex;
-  flex-direction: column;
-}
-.starters h3, .mains h3, .desserts h3 {
+.menu1 .starters h3, .menu1 .mains h3, .menu1 .desserts h3 {
   display: flex;
   align-items: center;
   margin: 1em -1em;
+  font-weight: bolder;
 }
-.starters h3:before, .starters h3:after, .mains h3:before, .mains h3:after, .desserts h3:before, .desserts h3:after {
+.menu1 .starters h3:before, .menu1 .mains h3:before, .menu1 .desserts h3:before {
   content: "";
   flex: 1;
   height: 5px;
   margin: 0 1em;
   background: black;
+}
+.menu1 .starters h3:after, .menu1 .mains h3:after, .menu1 .desserts h3:after {
+  content: "";
+  flex: 1;
+  height: 5px;
+  margin: 0 1em;
+  background: black;
+}
+.menu1 .starters h3:hover, .menu1 .mains h3:hover, .menu1 .desserts h3:hover {
+  text-decoration: underline;
 }
 
 ul {
@@ -279,6 +304,11 @@ li {
   flex-direction: row;
   justify-content: space-between;
 }
+li p {
+  padding: 0 10px 0 10px;
+  margin: 0;
+  line-height: 3;
+}
 
 header h2, .btn h2, footer h2 {
   font-family: "blackhand_trialregular";
@@ -286,10 +316,17 @@ header h2, .btn h2, footer h2 {
 
 .bottom {
   display: flex;
+  font-size: 1.5em;
 }
 .bottom i {
-  line-height: 60px;
+  line-height: normal;
   margin-right: 10px;
+  background: linear-gradient(to right, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bottom p {
+  margin: 0;
 }
 
 /*Stylesheet - Page2.html - Le chic à la française */
@@ -297,17 +334,205 @@ header h2, .btn h2, footer h2 {
   background-color: #fff5fe;
   color: black;
 }
+.page2 h2 {
+  background: linear-gradient(to right, #c77412, #a56799, #6e4ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu2 .starters {
+  color: #c77412;
+}
+.menu2 .starters h3 {
+  display: flex;
+  align-items: center;
+  margin: 1em -1em;
+  font-weight: bolder;
+}
+.menu2 .starters h3:before {
+  content: "";
+  flex: 1;
+  height: 5px;
+  margin: 0 1em;
+  background: #c77412;
+}
+.menu2 .starters h3:after {
+  content: "";
+  flex: 1;
+  height: 5px;
+  margin: 0 1em;
+  background: #c77412;
+}
+.menu2 .starters h3:hover {
+  text-decoration: underline;
+}
+.menu2 .mains {
+  color: #a56799;
+}
+.menu2 .mains h3 {
+  display: flex;
+  align-items: center;
+  margin: 1em -1em;
+  font-weight: bolder;
+}
+.menu2 .mains h3:before {
+  content: "";
+  flex: 1;
+  height: 5px;
+  margin: 0 1em;
+  background: #a56799;
+}
+.menu2 .mains h3:after {
+  content: "";
+  flex: 1;
+  height: 5px;
+  margin: 0 1em;
+  background: #a56799;
+}
+.menu2 .mains h3:hover {
+  text-decoration: underline;
+}
+.menu2 .desserts {
+  color: #6e4ccc;
+}
+.menu2 .desserts h3 {
+  display: flex;
+  align-items: center;
+  margin: 1em -1em;
+  font-weight: bolder;
+}
+.menu2 .desserts h3:before {
+  content: "";
+  flex: 1;
+  height: 5px;
+  margin: 0 1em;
+  background: #6e4ccc;
+}
+.menu2 .desserts h3:after {
+  content: "";
+  flex: 1;
+  height: 5px;
+  margin: 0 1em;
+  background: #6e4ccc;
+}
+.menu2 .desserts h3:hover {
+  text-decoration: underline;
+}
 
 /*Stylesheet - Page3.html - Le délice des papilles */
 .page3 {
   background-color: #edefef;
   color: black;
 }
+.page3 h2 {
+  background: linear-gradient(to right, #0432df, #229df9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu3 .starters h3 {
+  display: flex;
+  align-items: center;
+  margin: 1em -1em;
+  font-weight: bolder;
+}
+.menu3 .starters h3:before {
+  content: "";
+  flex: 1;
+  height: 5px;
+  margin: 0 1em;
+  background: #0432df;
+}
+.menu3 .starters h3:after {
+  content: "";
+  flex: 1;
+  height: 5px;
+  margin: 0 1em;
+  background: #0432df;
+}
+.menu3 .starters h3:hover {
+  text-decoration: underline;
+}
+.menu3 .mains h3 {
+  display: flex;
+  align-items: center;
+  margin: 1em -1em;
+  font-weight: bolder;
+}
+.menu3 .mains h3:before {
+  content: "";
+  flex: 1;
+  height: 5px;
+  margin: 0 1em;
+  background: #0670f3;
+}
+.menu3 .mains h3:after {
+  content: "";
+  flex: 1;
+  height: 5px;
+  margin: 0 1em;
+  background: #0670f3;
+}
+.menu3 .mains h3:hover {
+  text-decoration: underline;
+}
+.menu3 .desserts h3 {
+  display: flex;
+  align-items: center;
+  margin: 1em -1em;
+  font-weight: bolder;
+}
+.menu3 .desserts h3:before {
+  content: "";
+  flex: 1;
+  height: 5px;
+  margin: 0 1em;
+  background: #229df9;
+}
+.menu3 .desserts h3:after {
+  content: "";
+  flex: 1;
+  height: 5px;
+  margin: 0 1em;
+  background: #229df9;
+}
+.menu3 .desserts h3:hover {
+  text-decoration: underline;
+}
 
 /*Stylesheet - Page4.html - La palette du goût */
 .page4 {
   background-color: #fdfffd;
   color: black;
+}
+.page4 h2 {
+  background: linear-gradient(to right, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu4 .starters h3, .menu4 .mains h3, .menu4 .desserts h3 {
+  display: flex;
+  align-items: center;
+  margin: 1em -1em;
+  font-weight: bolder;
+}
+.menu4 .starters h3:before, .menu4 .mains h3:before, .menu4 .desserts h3:before {
+  content: "";
+  flex: 1;
+  height: 5px;
+  margin: 0 1em;
+  background: linear-gradient(to right, #3d9339, #bfff7e);
+}
+.menu4 .starters h3:after, .menu4 .mains h3:after, .menu4 .desserts h3:after {
+  content: "";
+  flex: 1;
+  height: 5px;
+  margin: 0 1em;
+  background: linear-gradient(to right, #bfff7e, #3d9339);
+}
+.menu4 .starters h3:hover, .menu4 .mains h3:hover, .menu4 .desserts h3:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

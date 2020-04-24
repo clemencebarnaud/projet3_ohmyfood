@@ -1,6 +1,32 @@
 
 /* Stylesheet - Projet n°3 : Dynamisez une page web avec des animations css / Clémence Barnaud */
 
+@mixin menu-lines ($background1, $background2) {
+	h3 {
+		display: flex;
+		align-items: center;
+		margin: 1em -1em;
+		font-weight: bolder;
+		&:before {
+			content: ""; 
+			flex:1;
+			height: 5px;
+			margin: 0 1em;
+			background:$background1;
+		}
+		&:after {
+			content: ""; 
+			flex:1;
+			height: 5px;
+			margin: 0 1em;
+			background:$background2;
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
 @font-face {
 	font-family: 'ClarikaGrotesque-Medium';
   	src: url('assets/fonts/ClarikaGrotesque-Medium/font.eot');
@@ -18,8 +44,6 @@
          url('assets/fonts/BlackHand/blackhand_trial-webfont.woff') format('woff'),
          url('assets/fonts/BlackHand/blackhand_trial-webfont.ttf') format('truetype'),
          url('assets/fonts/BlackHand/blackhand_trial-webfont.svg#blackhand_trialregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
 %font_note_enchantee {
@@ -34,8 +58,6 @@
          url('assets/fonts/Kalam/kalam-regular-webfont.woff') format('woff'),
          url('assets/fonts/Kalam/kalam-regular-webfont.ttf') format('truetype'),
          url('assets/fonts/Kalam/kalam-regular-webfont.svg#kalamregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
@@ -46,8 +68,6 @@
          url('assets/fonts/Qilla/qilla_slant-webfont.woff') format('woff'),
          url('assets/fonts/Qilla/qilla_slant-webfont.ttf') format('truetype'),
          url('assets/fonts/Qilla/qilla_slant-webfont.svg#qillaitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
 %font_chic_francaise {
@@ -62,8 +82,6 @@
          url('assets/fonts/LatinModernRoman/lmromandemi10-regular-webfont.woff') format('woff'),
          url('assets/fonts/LatinModernRoman/lmromandemi10-regular-webfont.ttf') format('truetype'),
          url('assets/fonts/LatinModernRoman/lmromandemi10-regular-webfont.svg#latin_modern_roman_demi10Rg') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
@@ -74,8 +92,6 @@
          url('assets/fonts/DancingScript/dancingscript-regular-webfont.woff') format('woff'),
          url('assets/fonts/DancingScript/dancingscript-regular-webfont.ttf') format('truetype'),
          url('assets/fonts/DancingScript/dancingscript-regular-webfont.svg#dancing_script_otregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
 %font_delice_papilles {
@@ -90,8 +106,6 @@
          url('assets/fonts/KaushanScript/kaushanscript-regular-webfont.woff') format('woff'),
          url('assets/fonts/KaushanScript/kaushanscript-regular-webfont.ttf') format('truetype'),
          url('assets/fonts/KaushanScript/kaushanscript-regular-webfont.svg#kaushan_scriptregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
 %font_palette_gout {
@@ -104,6 +118,18 @@ $color-bloc3: #edefef;
 $color-bloc4: #fdfffd;
 $color-header: #579c87;
 $color-text-header: #fdcb46;
+$text-menu1: black;
+$img-menu1-1:#f04a5e;
+$img-menu1-2:#f78f6a;
+$text-menu2-1:#c77412;
+$text-menu2-2:#a56799;
+$text-menu2-3:#6e4ccc;
+$text-menu3-1:#0432df;
+$text-menu3-2:#0670f3;
+$text-menu3-3:#229df9;
+$text-menu4-1:#3d9339;
+$text-menu4-2:#bfff7e;
+$color-shadow: #ededed;
 
 html {
 	height: 100%;
@@ -167,6 +193,7 @@ main {
 	width: 325px;
 	height: 460px;
 	margin: 60px 30px 0 30px;
+	box-shadow: 0 0 10px $color-shadow;
 }
 
 h2, h3 {
@@ -179,6 +206,9 @@ h2, h3 {
 	background-color: $color-bloc1;
 	i {
 		font-size: 2em;
+		background: linear-gradient(to right, $img-menu1-1, $img-menu1-2);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 	h2 {
 		@extend %font_note_enchantee;
@@ -197,10 +227,14 @@ h2, h3 {
 	h2 {
 		@extend %font_chic_francaise;
 		font-size: 1.2em;
+		background: linear-gradient(to right, $text-menu2-1, $text-menu2-2, $text-menu2-3);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 	h3 {
 		font-family: 'latin_modern_roman_demi10Rg';
 		font-size: 2em;
+		color: $text-menu2-1;
 	}
 }
 
@@ -210,10 +244,14 @@ h2, h3 {
 	h2 {
 		@extend %font_delice_papilles;
 		font-size: 1.7em;
+		background: linear-gradient(to right, $text-menu3-1, $text-menu3-2, $text-menu3-3);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 	h3 {
 		font-family: 'kalamregular';
 		font-size: 2em;
+		color: $text-menu3-3;
 	}
 }
 	
@@ -223,10 +261,14 @@ h2, h3 {
 	h2 {
 		@extend %font_palette_gout;
 		font-size: 1.5em;
+		background: linear-gradient(to right, $text-menu4-1, $text-menu4-2);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 	h3 {
 		font-family: 'kalamregular';
 		font-size: 2em;
+		color: $text-menu4-1;
 	}
 }
 
@@ -278,6 +320,9 @@ footer {
 
 h1 {
 	align-self: center;
+	font-size: 2.3em;
+	font-family: 'ClarikaGrotesque-Medium';
+	padding-top: 20px;
 }
 
 %pages {
@@ -290,6 +335,7 @@ h1 {
 	margin: auto;
 	margin-bottom: 85px;
 	padding: 60px 0 60px 0;
+	box-shadow: 0 0 10px $color-shadow;
 }
 
 .page1 {
@@ -297,12 +343,22 @@ h1 {
 	background-color: $color-bloc1;
 	color: black;
 	@extend %font_note_enchantee;
+	font-stretch: ultra-expanded;
 }
 
 .name {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	i {
+		font-size: 3em;
+		background: linear-gradient(to right, $img-menu1-1, $img-menu1-2);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	h2 {
+		font-size: 2em;
+	}
 }
 
 .menu1, .menu2, .menu3, .menu4 {
@@ -311,20 +367,9 @@ h1 {
 	}
 }
 
-.starters, .mains, .desserts {
-	display: flex;
-	flex-direction: column;
-	h3 {
-		display: flex;
-		align-items: center;
-		margin: 1em -1em;
-		&:before, &:after {
-			content: ""; 
-			flex:1;
-			height: 5px;
-			margin: 0 1em;
-			background: black;
-		}
+.menu1 {
+	.starters, .mains, .desserts {
+		@include menu-lines ($text-menu1, $text-menu1);
 	}
 }
 
@@ -337,6 +382,11 @@ li {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	p {
+		padding: 0 10px 0 10px;
+		margin: 0;
+		line-height: 3;
+	}
 }
 
 header {
@@ -347,9 +397,16 @@ header {
 
 .bottom {
 	display: flex;
+	font-size: 1.5em;
 	i {
-		line-height: 60px;
+		line-height: normal;
 		margin-right: 10px;
+		background: linear-gradient(to right, $img-menu1-1, $img-menu1-2);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	p {
+		margin: 0;
 	}	
 }
 
@@ -361,6 +418,26 @@ header {
 	background-color: $color-bloc2;
 	color: black;
 	@extend %font_chic_francaise;
+	h2 {
+		background: linear-gradient(to right, $text-menu2-1, $text-menu2-2, $text-menu2-3);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.menu2 {
+	.starters {
+		color: $text-menu2-1;
+		@include menu-lines ($text-menu2-1, $text-menu2-1);
+	}
+	.mains {
+		color: $text-menu2-2;
+		@include menu-lines ($text-menu2-2, $text-menu2-2);
+	}
+	.desserts {
+		color: $text-menu2-3;
+		@include menu-lines ($text-menu2-3, $text-menu2-3);
+	}
 }
 
 /*Stylesheet - Page3.html - Le délice des papilles */
@@ -370,6 +447,23 @@ header {
 	background-color: $color-bloc3;
 	color: black;
 	@extend %font_delice_papilles;
+	h2 {
+	background: linear-gradient(to right, #0432df, #229df9);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.menu3 {
+	.starters {
+		@include menu-lines ($text-menu3-1, $text-menu3-1);
+	}
+	.mains {
+		@include menu-lines ($text-menu3-2, $text-menu3-2);
+	}
+	.desserts {
+		@include menu-lines ($text-menu3-3, $text-menu3-3);
+	}
 }
 
 /*Stylesheet - Page4.html - La palette du goût */
@@ -379,4 +473,15 @@ header {
 	background-color: $color-bloc4;
 	color: black;
 	@extend %font_palette_gout;
+	h2 {
+		background: linear-gradient(to right, #3d9339, #bfff7e);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.menu4 {
+	.starters, .mains, .desserts {
+		@include menu-lines (linear-gradient(to right,$text-menu4-1, $text-menu4-2), linear-gradient(to right, $text-menu4-2, $text-menu4-1));
+	}
 }
